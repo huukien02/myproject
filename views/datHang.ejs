@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/Cart.css" />
+    <title>Giỏ Hàng</title>
+  </head>
+  <body>
+    <h3 style="margin-left: 1300px">
+      Hello, <%=name%>
+      <i onclick="logOut()" class="fa-solid fa-right-from-bracket"></i>
+    </h3>
+    <div class="menu">
+      <ul>
+        <li>My Cart</li>
+        <li>Profile</li>
+      </ul>
+    </div>
+    <div class="table">
+      <table id="table"></table>
+      <br />
+      <p style="margin-left: 330px; font-weight: bold">
+        Total: $ <span id="total"></span>
+      </p>
+      <button style="margin-left: 320px" onclick="openForm()">Đặt Hàng</button>
+      <br /><br />
+    </div>
+
+    <div class="form">
+      <form action="" method="post">
+        <input type="hidden" name="thanhToan" id="tt" /> <br />
+        <input type="hidden" name="donHang" id="donHang" /> <br />
+        <input type="text" name="name" placeholder="enter name" /> <br />
+        <input type="text" name="address" placeholder="enter address" /> <br />
+        <input type="text" name="phone" placeholder="enter phone" /> <br />
+        <input type="text" name="note" placeholder="Note" /> <br />
+        <input onclick="deleteCart()" type="submit" value="Oder Now" />
+        <p onclick="deleteForm()" id="del">X</p>
+      </form>
+    </div>
+
+    <div class="info">
+      <h4>Thông tin</h4>
+      <p>Id: <%=id%></p>
+      <p>Name: <%=name%></p>
+      <p>Username: <%=username%></p>
+      <p>Password: <%=password%></p>
+      <p>Phone: <%=phone%></p>
+      <button onclick="changePass()">Change Pass</button>
+    </div>
+    <script src="/javascripts/datHang.js"></script>
+    <script>
+      function changePass() {
+        window.location = "/cart/changepass";
+      }
+
+      var delete_cookie = function (name) {
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+      };
+
+      /* Log Out */
+      function logOut() {
+        if (confirm("Bạn có muốn đăng xuất không")) {
+          delete_cookie('token');
+          location.reload();
+        }
+      }
+
+      /* Menu */
+      var list = document.querySelectorAll("li");
+      var table = document.querySelector(".table");
+      var info = document.querySelector(".info");
+
+      list[0].addEventListener("click", () => {
+        table.style.display = "block";
+        info.style.display = "none";
+      });
+
+      list[1].addEventListener("click", () => {
+        table.style.display = "none";
+        info.style.display = "block";
+      });
+    </script>
+  </body>
+</html>

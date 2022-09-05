@@ -1,0 +1,240 @@
+*{
+    font-family: tahoma;
+    list-style-type: none;
+}
+/* LOG OUT */
+.fa-solid.fa-right-from-bracket
+{
+    color: red;
+}
+.fa-solid.fa-right-from-bracket
+{
+    cursor: pointer;
+}
+
+/* MENU */
+.menu ul 
+{
+    display: flex;
+    margin-left: 600px;
+}
+.menu ul li 
+{
+    border: 1px solid red;
+    padding: 15px;
+    background: #000;
+    color: white;
+    font-weight: bold;
+}
+.menu ul li:hover 
+{
+    cursor: pointer;
+    color: red;
+}
+
+
+
+
+/* FORM */
+.form 
+{
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    width: 1000vh;
+    height: 1000vh;
+    position: fixed;
+    top: 0;
+}
+.form form p
+{
+    width: 15px;
+    padding-left: 4px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+    top: -300px;
+    left: 450px;
+}
+.form form 
+{  
+    padding-left: 60px;
+    padding-bottom: 30px;
+    background-color: white;
+    margin-left: 200px;
+    border: 1px solid black;
+    width: 500px;
+    box-shadow: 0px 0px 15px black;
+    
+   position: relative;
+   left: 280px;
+   top: 100px;
+}
+.form form input {
+    margin-bottom: 8px;
+}
+.form form input:nth-child(1)
+{
+    width: 430px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding-left: 10px;
+}
+.form form input:nth-child(3)
+{
+    width: 430px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding-left: 10px;
+}
+.form form input:nth-child(5)
+{
+    width: 430px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding-left: 10px;
+}
+.form form input:nth-child(7)
+{
+    width: 430px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding-left: 10px;
+}
+.form form input:nth-child(9)
+{
+    width: 430px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding-left: 10px;
+}
+.form form input:nth-child(11)
+{
+    width: 430px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding-left: 10px;
+}
+.form form input:nth-child(13)
+{
+    margin-top: 30px;
+    margin-left: 2px;
+    width: 435px;
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: #1DA1F2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Table */
+.table
+{
+    margin-left: 330px;
+}
+.table button
+{
+    width: 120px;
+    height: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(32, 181, 32);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+.table button:hover 
+{
+    background-color: rgb(20, 116, 20);
+    font-size: 12px;
+}
+#table tr th 
+{
+    width: 150px;
+    height: 35px;
+    font-size: 13px;
+}
+#table tr td img 
+{
+    width: 70px;
+}
+#table tr td 
+{
+    text-align: center;
+}
+#table tr td i 
+{
+    color: red;
+}
+#table tr td i:hover 
+{
+    cursor: pointer;
+}
+#table tr td input
+{
+  width: 30px;
+  text-align: center;
+}
+#table tr:nth-child(odd)
+{
+    background-color: lightgray;
+}
+#table tr:nth-child(even)
+{
+    background-color: whitesmoke;
+}
+
+
+#table tr:nth-child(1)
+{
+    background-color: rgb(36, 147, 16);
+    color: white;
+}
+/* INFO */
+.info 
+{
+    display: none;
+    border: 1px solid gray;
+    width: 400px;
+    margin-left: 500px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 15px gray;
+}
+.info button
+{
+    width: 150px;
+    height: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(32, 181, 32);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.4s;
+    margin-left: 110px;
+}
+.info button:hover 
+{
+    background-color: rgb(20, 116, 20);
+    font-size: 12px;
+}

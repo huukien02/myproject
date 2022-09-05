@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Đăng Nhập</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>Trang Chủ</li>
+            <li class="menu-one">Điện Thoại
+                <ul class="menu-one-parent">
+                    <li>Iphone</li>
+                    <li>Oppo</li>
+                    <li>Samsung</li>
+                    <li>Nokia</li>
+                </ul>
+            </li>
+            <li class="menu-two">Laptop
+                <ul class="menu-two-parent">
+                    <li>Macbook</li>
+                    <li>Acer</li>
+                    <li>Dell</li>
+                    <li>Lenovo</li>
+                </ul>
+            </li>
+            <li class="menu-three">Phụ Kiện
+                <ul class="menu-three-parent">
+                    <li>Tai nghe</li>
+                    <li>bàn phím</li>
+                    <li>Chuột</li>
+                    <li>Ốp lưng</li>
+                </ul>
+
+            </li>
+            <li>Giới Thiệu</li>
+            <li>Liên Hệ</li>
+        </ul>
+    </div>
+
+    <form action="/login" method="post">
+        <h1>LOGIN</h1>
+        <label for=""><i class="fa-solid fa-user"></i></label> <input type="text" name="username" id="tk"><br><br>
+        <label for=""><i class="fa-solid fa-lock"></i></label><input type="password" name="password" id="mk"><i id="eye1" onclick="show()" class="fa-solid fa-eye"></i><i id="eye2" onclick="show()" class="fa-solid fa-eye-slash"></i><br><br>
+        <button onclick="login()">SIGN IN</button><br><br>
+        <small style="margin-left: 169px ;">Not a member ? <a href="/Signup">Sign up</a></small>
+        <br><br><br><br><br>
+    </form>
+
+
+    <div class="footer">
+        <div class="footer-head">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-trophy fa-2x"></i>
+                    <p>
+                        <small style="margin-left:20px ;">Sản phẩm</small><br>
+                       <strong style="font-size: 15px ; margin-left: 5px;">CHÍNH HÃNG</strong>
+                    </p>
+               </li>
+                <li>
+                    <i class="fa-solid fa-taxi fa-2x"></i>
+                    <p>
+                       <small style="margin-left:10px;">Giao hàng tận nơi</small><br>
+                      <strong style="font-size: 15px; margin-left: 4px;">63 TỈNH THÀNH</strong>
+                   </p>
+               </li>
+                <li>
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                    <p>
+                       <small style="margin-left:5px ;">Tư vấn miễn phí</small><br>
+                      <strong style="font-size: 15px ; margin-left: 4px;">0914128394</strong>
+                   </p>
+               </li>
+                <li>
+                    <i class="fa-solid fa-briefcase fa-2x"></i>
+                    <p>
+                       <small style="margin-left:0px ;">Chính sách đổi trả</small><br>
+                      <strong style="font-size: 15px ; margin-left: 6px;">LINH HOẠT</strong>
+                   </p>
+               </li>
+            </ul>
+        </div>
+        <div class="footer-body">
+            <div class="footer-body-1">
+                <h5 style="text-align:center ;">Hỗ Trợ Khách Hàng</h5>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Câu hỏi thường gặp</li>
+                    <li><i class="fa-solid fa-check"></i> Phương thức thanh toán</li>
+                    <li><i class="fa-solid fa-check"></i> Hướng dẫn đặt hàng</li>
+                    <li><i class="fa-solid fa-check"></i> Trung tâm bảo hành</li>
+                </ul>
+            </div>
+            <div class="footer-body-2"> 
+                <h5 style="text-align:center ;">Chính Sách</h5>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Chính sách giao hàng</li>
+                    <li><i class="fa-solid fa-check"></i> Chính sách đổi sản phẩm</li>
+                    <li><i class="fa-solid fa-check"></i> Chính sách bảo mật</li>
+                    <li><i class="fa-solid fa-check"></i> Chính sách bảo hành</li>
+                </ul>
+            </div>
+            <div class="footer-body-3">
+                <h5 style="text-align:center ;">Liên Hệ Chúng Tôi</h5>
+                <ul>
+                    <li><i style="color:red ;" class="fa-solid fa-location-pin"></i> Câu hỏi thường gặp</li>
+                    <li><i class="fa-solid fa-square-phone"></i> Phương thức thanh toán</li>
+                </ul>
+            </div>
+         </div>
+    </div>
+    
+
+    <script>
+
+
+        /* ẨN HIỆN PASSWORD */ 
+        function show()
+        {
+            var mk = document.getElementById('mk');
+            if(mk.type == "password")
+            {
+                mk.type = "text";
+                document.getElementById('eye1').style.display = "none";
+                document.getElementById('eye2').style.display = "block";
+            }
+            else if(mk.type == "text")
+            {
+               mk.type = "password";
+               document.getElementById('eye1').style.display = "block";
+                document.getElementById('eye2').style.display = "none";
+            }
+        }
+    </script>
+
+
+    
+</body>
+</html>

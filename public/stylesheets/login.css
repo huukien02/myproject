@@ -1,0 +1,280 @@
+*{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: tahoma;
+}
+/* ---------------- Menu ---------------- */
+.menu {
+    /* border: 1px solid #000; */
+  }
+  .menu ul {
+    padding-left: 170px;
+    border: 1px solid #1877f2;
+    display: flex;
+    background-color: #1877f2;
+  }
+  .menu li {
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #1877f2;
+    background-color: #1877f2;
+    color: white;
+    transition: all 0.5s;
+  }
+  .menu li:hover {
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+  }
+  .menu ul li:nth-child(2) ul {
+    background-color: white;
+    position: absolute;
+    left: 370px;
+    top: 79px;
+    display: block;
+    padding-left: 0;
+    box-shadow: 0px 1px 6px black;
+    border: 1px solid #000;
+    display: none;
+  }
+  .menu ul li:nth-child(2) ul li {
+    font-size: 13px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    font-weight: 100;
+    padding: 10px;
+    width: 170px;
+    transition: all 0.4s;
+  }
+  .menu ul li:nth-child(2) ul li:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .menu ul li:nth-child(2) ul li:nth-child(4) {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .menu ul li:nth-child(2) ul li:hover {
+    /* background-color: lightgray; */
+    font-weight: bold;
+    cursor: pointer;
+    color: #1877f2;
+  }
+  
+  .menu-one:hover .menu-one-parent {
+    display: block;
+  }
+  
+  .menu ul li:nth-child(3) ul {
+    background-color: white;
+    position: absolute;
+    left: 563px;
+    top: 79px;
+    display: block;
+    padding-left: 0;
+    box-shadow: 0px 1px 6px black;
+    border: 1px solid #000;
+    display: none;
+  }
+  .menu ul li:nth-child(3) ul li {
+    font-size: 13px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    font-weight: 100;
+    padding: 10px;
+    width: 170px;
+    transition: all 0.4s;
+  }
+  .menu ul li:nth-child(3) ul li:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .menu ul li:nth-child(3) ul li:nth-child(4) {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .menu ul li:nth-child(3) ul li:hover {
+    /* background-color: lightgray; */
+    font-weight: bold;
+    cursor: pointer;
+    color: #1877f2;
+  }
+  
+  .menu-two:hover .menu-two-parent {
+    display: block;
+  }
+  
+  .menu ul li:nth-child(4) ul {
+    background-color: white;
+    position: absolute;
+    left: 755px;
+    top: 79px;
+    display: block;
+    padding-left: 0;
+    box-shadow: 0px 1px 6px black;
+    border: 1px solid #000;
+    display: none;
+  }
+  .menu ul li:nth-child(4) ul li {
+    font-size: 13px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    font-weight: 100;
+    padding: 10px;
+    width: 170px;
+    transition: all 0.4s;
+  }
+  .menu ul li:nth-child(4) ul li:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .menu ul li:nth-child(4) ul li:nth-child(4) {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .menu ul li:nth-child(4) ul li:hover {
+    /* background-color: lightgray; */
+    font-weight: bold;
+    cursor: pointer;
+    color: #1877f2;
+  }
+  
+  .menu-three:hover .menu-three-parent {
+    display: block;
+  }
+form
+{
+    padding-top: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 495px;
+    margin-left: 480px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    box-shadow: 0px 1px 8px gray;
+}
+form h1
+{
+    color: #1877f2;
+    margin-left: 190px;
+}
+form a:hover
+{
+    font-size: 14px;
+    color: red;
+}
+
+label i 
+{
+    color: white;
+    text-align: center;
+    width: 38px;
+    height: 28px;
+    border: 1px solid lightgray;
+    padding-top: 10px;
+    background-color: black;
+    border-radius: 5px;
+}
+form input
+{
+    padding-left: 49px;
+    width: 270px;
+    height: 38px;
+    margin-top: 5px;
+    color: black;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px gray;
+}
+.fa-solid.fa-user
+{
+    position: relative;
+    left: 86px;
+    top: -1px;
+}
+.fa-solid.fa-lock
+{
+    position: relative;
+    left: 86px;
+    top: -1px;
+}
+ #tk
+{
+    margin-left: 40px;
+}
+#mk
+{
+    margin-left: 45px;
+}
+button
+{
+    font-size: 16px;
+    font-weight: 600;
+    width: 323px;
+    height: 39px;
+    margin-left: 85px;
+    background-color: #1877f2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+button:hover
+{
+    background-color: #045fd7;
+}
+input:focus
+{
+    outline: none;
+}
+
+i:hover
+{
+    cursor: pointer;
+}
+.fa-solid.fa-eye
+{
+    position: absolute;
+    top: 315px;
+    left: 865px;
+   
+}
+.fa-solid.fa-eye-slash
+{
+    position: absolute;
+    top: 315px;
+    left: 865px;
+    display: none;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top-style:groove ;
+  }
+  .footer-head ul {
+    display: flex;
+    margin-left: 270px;
+  }
+  .footer-head ul li {
+    display: flex;
+    margin-left: 30px;
+  }
+  .footer-head ul li i {
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 100%;
+    padding: 17px;
+    color: white;
+  }
+  .footer-body {
+    padding-left: 400px;
+    display: flex;
+  }
+  

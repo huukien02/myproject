@@ -1,0 +1,616 @@
+*{
+  font-family: tahoma;
+}
+*{
+  font-family: tahoma;
+  list-style-type: none;
+  text-decoration: none;
+}
+.container{
+  /* border: 1px solid #000; */
+  width: 1500px;
+  /* height: 1000px; */
+}
+
+/* ---------------- Login ---------------- */
+.login
+{
+  text-align: right;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.login a 
+{
+  font-size: 13px;
+  color: #000;
+  margin: 5px;
+}
+.login i 
+{
+  margin-left: 10px;
+  color: red;
+}
+.login i:hover 
+{
+  cursor: pointer;
+}
+.login a:hover 
+{
+  color: red;
+}
+/* ---------------- Banner ---------------- */
+.banner
+{
+    display: flex;
+}
+.logo{
+    margin-left: 160px;
+}
+.logo img 
+{
+    width: 200px;
+}
+.search ul 
+{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+    width: 300px;
+    position: absolute;
+    left: 390px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    background-color: white;
+    padding-left: 0px;
+}
+.search ul li 
+{
+    margin-top: 3px;
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.search ul li:hover 
+{
+    color: red;
+    cursor: pointer;
+}
+.search ul li span 
+{
+    position: relative;
+    top: -20px;
+}
+.search ul li img 
+{
+    width: 50px;
+}
+.search input 
+{
+    padding-left: 20px;
+    border: 2px solid #1877f2;
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 500px;
+    height: 40px;
+    outline: none;
+}
+.search i {
+    padding: 13px;
+    border: 1px solid #1877f2;
+    color: white;
+    background-color: #1877f2;
+    position: relative;
+    left: -50px;
+}
+.search i:hover 
+{
+    cursor: pointer;
+}
+
+.user
+{
+    margin-top: 40px;
+    margin-left: 20px;
+    
+}
+.user i 
+{
+    border: 1px solid #1877f2;
+    background-color: #1877f2;
+    color: white;
+    padding: 15px;
+    border-radius: 100%;
+    transition: all 0.4s;
+}
+.user span 
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.myCart
+{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.myCart i 
+{
+    border: 1px solid #1877f2;
+    background-color: #1877f2;
+    color: white;
+    padding: 15px;
+    border-radius: 100%;
+    transition: all 0.4s;
+}
+.myCart span 
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+.banner i:hover 
+{
+    cursor: pointer;
+    color: red;
+}
+/* ---------------- Menu ---------------- */
+.menu{
+  /* border: 1px solid #000; */
+}
+.menu ul 
+{
+  padding-left: 170px;
+  border: 1px solid #1877f2;
+   /* margin-left: 110px; */
+   display: flex;
+   background-color:#1877f2 ;
+}
+.menu li 
+{
+  width: 150px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #1877f2;
+  background-color: #1877f2;
+  color: white;
+  transition: all 0.5s;
+}
+.menu li:hover 
+{
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+}
+.menu ul li:nth-child(2) ul 
+{
+  background-color: white;
+  position: absolute;
+  left: 370px;
+  top: 304px;
+  display: block;
+  padding-left: 0;
+  box-shadow: 0px 1px 6px black;
+  border: 1px solid #000;
+  display: none;
+
+}
+.menu ul li:nth-child(2) ul li  
+{
+  font-size: 13px;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  font-weight: 100;
+  padding: 10px;
+  width: 170px;
+  transition: all 0.4s;
+}
+.menu ul li:nth-child(2) ul li:nth-child(1)
+{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.menu ul li:nth-child(2) ul li:nth-child(4)
+{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.menu ul li:nth-child(2) ul li:hover
+{
+  /* background-color: lightgray; */
+  font-weight: bold;
+  cursor: pointer;
+  color: #1877f2;
+}
+
+.menu-one:hover .menu-one-parent
+{
+  display: block;
+}
+
+.menu ul li:nth-child(3) ul 
+{
+  background-color: white;
+  position: absolute;
+  left: 563px;
+  top: 304px;
+  display: block;
+  padding-left: 0;
+  box-shadow: 0px 1px 6px black;
+  border: 1px solid #000;
+  display: none;
+}
+.menu ul li:nth-child(3) ul li  
+{
+  font-size: 13px;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  font-weight: 100;
+  padding: 10px;
+  width: 170px;
+  transition: all 0.4s;
+}
+.menu ul li:nth-child(3) ul li:nth-child(1)
+{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.menu ul li:nth-child(3) ul li:nth-child(4)
+{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.menu ul li:nth-child(3) ul li:hover
+{
+  /* background-color: lightgray; */
+  font-weight: bold;
+  cursor: pointer;
+  color: #1877f2;
+}
+
+.menu-two:hover .menu-two-parent
+{
+  display: block;
+}
+
+.menu ul li:nth-child(4) ul 
+{
+  background-color: white;
+  position: absolute;
+  left: 755px;
+  top: 304px;
+  display: block;
+  padding-left: 0;
+  box-shadow: 0px 1px 6px black;
+  border: 1px solid #000;
+  display: none;
+}
+.menu ul li:nth-child(4) ul li  
+{
+  font-size: 13px;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  font-weight: 100;
+  padding: 10px;
+  width: 170px;
+  transition: all 0.4s;
+}
+.menu ul li:nth-child(4) ul li:nth-child(1)
+{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.menu ul li:nth-child(4) ul li:nth-child(4)
+{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.menu ul li:nth-child(4) ul li:hover
+{
+  /* background-color: lightgray; */
+  font-weight: bold;
+  cursor: pointer;
+  color: #1877f2;
+}
+
+.menu-three:hover .menu-three-parent
+{
+  display: block;
+}
+/* ---------------- Slider chuyển ảnh ---------------- */
+.slider 
+{
+    display: flex;
+}
+.left 
+{
+
+}
+.left img 
+{
+    margin-left: 50px;
+    width: 900px;
+    height: 400px;
+}
+.right
+{
+    margin-left: 70px;
+}
+.right ul
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.right ul li 
+{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.right ul li img 
+{
+    width: 185px;
+    height: 185px;
+}
+
+/* ------------- Hiển thị sản phẩm -------------*/
+.DMUC
+{
+   border: 2px solid #1877f2;
+}
+.tittle
+{
+    font-size: 12px;
+    background-color: #1877f2;
+    border: 1px solid #1877f2;
+}
+.tittle h4
+{
+    color: white;
+    text-align: center;
+}
+.danhMuc{
+   display: flex;
+}
+.danhMuc-left 
+{
+   width: 400px;
+   /* border: 1px solid #000; */
+}
+.danhMuc-left h3 
+{
+   padding: 10px;
+   text-align: center;
+   background-color: tomato;
+   color: white;
+}
+.danhMuc-left ul 
+{
+   padding-left: 0px;
+   /* border: 1px solid #000; */
+}
+.danhMuc-left ul li 
+{
+   padding: 15px;
+   width: 371px;
+   border-bottom-style: inset;
+   font-size: 14px;
+   font-weight: 550;
+
+}
+.danhMuc-left ul li:hover 
+{
+   background-color: lightgray;
+   cursor: pointer;
+   color: rgb(39, 67, 207);
+}
+/* ------------- 1 Sản Phẩm -------------*/
+.danhMuc-right
+{
+  padding-top: 10px;
+  /* border: 1px solid #000; */
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  padding-bottom: 20px;
+}
+.sp
+{
+  /* border: 1px solid #000; */
+  display: flex;
+  margin-left: 123px;
+  margin-top: 20px;
+}
+.img
+{
+    z-index: 2;
+    position: absolute;  
+    transition: all 1s;
+    /* border: 1px solid #000; */
+}
+.img img 
+{
+  width: 200px;
+  border: 1px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 5px;
+}
+.name {
+  color: white;
+}
+.profile
+{
+  padding-left: 45px;
+  padding-right: 45px;
+  /* border: 1px solid #000; */
+  transition: all 1s;
+  z-index: 1;
+  height: 210px;
+  background-color: black;
+  border-radius: 5px;
+}
+.profile h3
+{
+  font-size: 15px;
+  display: block;
+  color: white;
+}
+
+.item1
+{
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #000;
+  margin-left: 5px;
+  background-color: red;
+}
+.item2 
+{
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #000;
+  margin-left: 5px;
+  background-color: gold;
+}
+.item3
+{
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #000;
+  margin-left: 5px;
+  background-color: pink;
+}
+.buy button
+{
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    background-image: linear-gradient(to right, rgb(207, 93, 205), rgb(47, 58, 224));
+    transition: all 0.8s;
+}
+.buy button:hover{
+    background-image: linear-gradient(to right, rgb(224, 47, 221), rgb(9, 24, 224));
+    cursor: pointer;
+}
+
+.sp:hover .img 
+{
+    transform:translateX(-83px);
+    cursor: pointer;
+}
+.sp:hover .profile
+{
+    transform:translateX(119px);
+    cursor: pointer;
+}
+
+
+
+
+/*------------- Phần cuối------------ */
+.footer
+{
+    margin-top: 50px;
+}
+.footer-head ul 
+{
+    display: flex;
+    margin-left: 270px;
+}
+.footer-head ul li 
+{
+    display: flex;
+    margin-left: 30px;
+}
+.footer-head ul li i 
+{
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 100%;
+    padding: 17px;
+    color: white;
+}
+.footer-body
+{
+    padding-left: 400px;
+    display: flex;
+}
+/*------------- Giỏ Hàng------------ */
+.cart
+{
+   position: absolute;
+   top: 170px;
+   left: 900px;
+   background-color: white;
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 5px black;
+
+   display: none;
+}
+.cart table thead tr 
+{
+    background-color: rgb(27, 137, 23);
+    color: white;
+    font-size: 14px;
+} 
+.cart table thead tr th 
+{
+    width: 100px;
+}
+.cart table tbody tr:nth-child(odd)
+{
+    background-color: lightgray;
+}
+.cart table tbody tr:nth-child(even)
+{
+    background-color: rgb(246, 231, 231);
+}
+.cart table tbody tr td 
+{
+    text-align: center;
+}
+.cart table tbody img 
+{
+    border: 1px solid gray;
+    width: 70px;
+}
+.cart table tbody input
+{
+    width: 30px;
+    outline: none;
+}
+.cart table tbody tr td i 
+{
+   color: red;
+}
+.cart table tbody tr td i:hover 
+{
+    cursor: pointer;
+    transform: scale(1.4)
+}
+.cart button
+{
+    border-radius: 5px;
+    border: 1px solid red;
+    background-color:red;
+    color: white;
+    font-weight: bold;
+    margin-left: 180px;
+    width: 150px;
+    height: 30px;
+    transition: all 0.3s;
+}
+.cart button:hover 
+{
+    background-color: white;
+    color: red;
+    cursor: pointer;
+}

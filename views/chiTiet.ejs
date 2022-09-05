@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/detail.css' />
+    <title>Detail</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li>Trang Chủ</li>
+                <li class="menu-one">Điện Thoại
+                    <ul class="menu-one-parent">
+                        <li>Iphone</li>
+                        <li>Oppo</li>
+                        <li>Samsung</li>
+                        <li>Nokia</li>
+                    </ul>
+                </li>
+                <li class="menu-two">Laptop
+                    <ul class="menu-two-parent">
+                        <li>Macbook</li>
+                        <li>Acer</li>
+                        <li>Dell</li>
+                        <li>Lenovo</li>
+                    </ul>
+                </li>
+                <li class="menu-three">Phụ Kiện
+                    <ul class="menu-three-parent">
+                        <li>Tai nghe</li>
+                        <li>bàn phím</li>
+                        <li>Chuột</li>
+                        <li>Ốp lưng</li>
+                    </ul>
+
+                </li>
+                <li>Giới Thiệu</li>
+                <li>Liên Hệ</li>
+            </ul>
+        </div>
+
+        <div>
+           <div class="detail">
+            <img src="<%=data[0].image%>" alt="">
+            <p><%=data[0].name%></p>
+            <p>Giá: $<%=data[0].price%> </p>
+            <p><%=data[0].moTa%></p>
+        </div> <br><br><br>
+
+        <form action="" method="post">
+            <input type="hidden" name="name" value="<%=name%>"> <br>
+            <input type="hidden" name="idSP" value="<%=data[0].id%>"><br>
+            <input style="width:400px ;" type="hidden" name="date" id="date"> <br>
+               <strong id="name"><%=name%>:</strong>
+            <input id="cmt" type="text" name="cmt" placeholder="Nhận xét của bạn ..">
+            <input id="submit" type="submit" value="Gửi">
+         </form>
+        </div>
+        <% for(let i = 0;i<data1.length;i++){%> 
+            <p class="detail-cmt">
+                <strong><%=data1[i].name%></strong>: 
+                <span><%=data1[i].cmt%></span>
+                <small>
+                    
+                      (<%= JSON.parse(data1[i].date).month %>/<%= JSON.parse(data1[i].date).day %>/<%= JSON.parse(data1[i].date).year %> - 
+                      <%= JSON.parse(data1[i].date).hour %>:<%= JSON.parse(data1[i].date).minute %>)
+                </small> 
+                <small><a href="/delete/cmt/<%=data1[i].id%>"><i class="fa-solid fa-trash-can"></i></a></small>
+            </p>
+         <%}%>
+
+        <div class="footer">
+            <div class="footer-head">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-trophy fa-2x"></i>
+                        <p>
+                            <small style="margin-left:20px ;">Sản phẩm</small><br>
+                           <strong style="font-size: 15px ; margin-left: 5px;">CHÍNH HÃNG</strong>
+                        </p>
+                   </li>
+                    <li>
+                        <i class="fa-solid fa-taxi fa-2x"></i>
+                        <p>
+                           <small style="margin-left:10px;">Giao hàng tận nơi</small><br>
+                          <strong style="font-size: 15px; margin-left: 4px;">63 TỈNH THÀNH</strong>
+                       </p>
+                   </li>
+                    <li>
+                        <i class="fa-solid fa-phone fa-2x"></i>
+                        <p>
+                           <small style="margin-left:5px ;">Tư vấn miễn phí</small><br>
+                          <strong style="font-size: 15px ; margin-left: 4px;">0914128394</strong>
+                       </p>
+                   </li>
+                    <li>
+                        <i class="fa-solid fa-briefcase fa-2x"></i>
+                        <p>
+                           <small style="margin-left:0px ;">Chính sách đổi trả</small><br>
+                          <strong style="font-size: 15px ; margin-left: 6px;">LINH HOẠT</strong>
+                       </p>
+                   </li>
+                </ul>
+            </div>
+            <div class="footer-body">
+                <div class="footer-body-1">
+                    <h5 style="text-align:center ;">Hỗ Trợ Khách Hàng</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Câu hỏi thường gặp</li>
+                        <li><i class="fa-solid fa-check"></i> Phương thức thanh toán</li>
+                        <li><i class="fa-solid fa-check"></i> Hướng dẫn đặt hàng</li>
+                        <li><i class="fa-solid fa-check"></i> Trung tâm bảo hành</li>
+                    </ul>
+                </div>
+                <div class="footer-body-2"> 
+                    <h5 style="text-align:center ;">Chính Sách</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Chính sách giao hàng</li>
+                        <li><i class="fa-solid fa-check"></i> Chính sách đổi sản phẩm</li>
+                        <li><i class="fa-solid fa-check"></i> Chính sách bảo mật</li>
+                        <li><i class="fa-solid fa-check"></i> Chính sách bảo hành</li>
+                    </ul>
+                </div>
+                <div class="footer-body-3">
+                    <h5 style="text-align:center ;">Liên Hệ Chúng Tôi</h5>
+                    <ul>
+                        <li><i style="color:red ;" class="fa-solid fa-location-pin"></i> Câu hỏi thường gặp</li>
+                        <li><i class="fa-solid fa-square-phone"></i> Phương thức thanh toán</li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <script>
+         var d = new Date()
+         var day = d.getDate()
+         var month = (d.getMonth()+1)
+         var year = d.getFullYear()
+         var hour = d.getHours()
+         var minute = d.getMinutes()
+    
+    var obj = {month,day,year,hour,minute}
+    document.getElementById('date').value = JSON.stringify(obj)
+    
+
+    </script>
+</body>
+</html>

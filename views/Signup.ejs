@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/Signup.css' />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Đăng Kí</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>Trang Chủ</li>
+            <li class="menu-one">Điện Thoại
+                <ul class="menu-one-parent">
+                    <li>Iphone</li>
+                    <li>Oppo</li>
+                    <li>Samsung</li>
+                    <li>Nokia</li>
+                </ul>
+            </li>
+            <li class="menu-two">Laptop
+                <ul class="menu-two-parent">
+                    <li>Macbook</li>
+                    <li>Acer</li>
+                    <li>Dell</li>
+                    <li>Lenovo</li>
+                </ul>
+            </li>
+            <li class="menu-three">Phụ Kiện
+                <ul class="menu-three-parent">
+                    <li>Tai nghe</li>
+                    <li>bàn phím</li>
+                    <li>Chuột</li>
+                    <li>Ốp lưng</li>
+                </ul>
+
+            </li>
+            <li>Giới Thiệu</li>
+            <li>Liên Hệ</li>
+        </ul>
+    </div>
+
+    <!-- SIGN UP -->
+    <form action="" method="post">
+        <h1>SIGN UP</h1>
+       <input name="name" id="name" type="text" placeholder="Name"><i class="fa-solid fa-file-signature"></i><br><br>
+       <input name="username" id="tk" type="text" placeholder="User"><i class="fa-solid fa-user"></i><br><br>
+       <input name="password" id="mk" type="password" placeholder="Password"><i class="fa-solid fa-lock"></i><br><br>
+       <input id="mk1" type="password" onkeyup="check()" placeholder="Confirm Password"><i id="check" class="fa-solid fa-circle-check"></i><i id="check2" class="fa-solid fa-circle-xmark"></i><br><br>
+       <input id="email" type="text" placeholder="Email"><i class="fa-solid fa-envelope"></i><br><br>
+       <input name="phone" id="phone" type="text" placeholder="Phone"><i class="fa-solid fa-phone"></i><br><br>
+       <input style="display:none ;" name="role" value="user"><br><br>
+        <input id="submit" type="submit" value="SIGN UP">
+        <br><br><br>
+        <small style="margin-left: 145px ;">Are you a member? <a href="/login">Sign in</a></small>
+        <br><br>
+        <p id="test"></p>
+    </form>
+    <!-- ------ -->
+
+    <div class="footer">
+        <div class="footer-head">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-trophy fa-2x"></i>
+                    <p>
+                        <small style="margin-left:20px ;">Sản phẩm</small><br>
+                       <strong style="font-size: 15px ; margin-left: 5px;">CHÍNH HÃNG</strong>
+                    </p>
+               </li>
+                <li>
+                    <i class="fa-solid fa-taxi fa-2x"></i>
+                    <p>
+                       <small style="margin-left:10px;">Giao hàng tận nơi</small><br>
+                      <strong style="font-size: 15px; margin-left: 4px;">63 TỈNH THÀNH</strong>
+                   </p>
+               </li>
+                <li>
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                    <p>
+                       <small style="margin-left:5px ;">Tư vấn miễn phí</small><br>
+                      <strong style="font-size: 15px ; margin-left: 4px;">0914128394</strong>
+                   </p>
+               </li>
+                <li>
+                    <i class="fa-solid fa-briefcase fa-2x"></i>
+                    <p>
+                       <small style="margin-left:0px ;">Chính sách đổi trả</small><br>
+                      <strong style="font-size: 15px ; margin-left: 6px;">LINH HOẠT</strong>
+                   </p>
+               </li>
+            </ul>
+        </div>
+        <div class="footer-body">
+            <div class="footer-body-1">
+                <h5 style="text-align:center ;">Hỗ Trợ Khách Hàng</h5>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Câu hỏi thường gặp</li>
+                    <li><i class="fa-solid fa-check"></i> Phương thức thanh toán</li>
+                    <li><i class="fa-solid fa-check"></i> Hướng dẫn đặt hàng</li>
+                    <li><i class="fa-solid fa-check"></i> Trung tâm bảo hành</li>
+                </ul>
+            </div>
+            <div class="footer-body-2"> 
+                <h5 style="text-align:center ;">Chính Sách</h5>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Chính sách giao hàng</li>
+                    <li><i class="fa-solid fa-check"></i> Chính sách đổi sản phẩm</li>
+                    <li><i class="fa-solid fa-check"></i> Chính sách bảo mật</li>
+                    <li><i class="fa-solid fa-check"></i> Chính sách bảo hành</li>
+                </ul>
+            </div>
+            <div class="footer-body-3">
+                <h5 style="text-align:center ;">Liên Hệ Chúng Tôi</h5>
+                <ul>
+                    <li><i style="color:red ;" class="fa-solid fa-location-pin"></i> Câu hỏi thường gặp</li>
+                    <li><i class="fa-solid fa-square-phone"></i> Phương thức thanh toán</li>
+                </ul>
+            </div>
+         </div>
+    </div>
+    <script>
+        /* Check PASSWORD */
+        function check()
+        {
+           var mk = document.getElementById('mk').value;
+           var mk1 = document.getElementById('mk1').value;
+           if(mk1 == mk)
+           {
+               document.getElementById('mk1').style.border = "2px solid blue";
+
+               document.getElementById('check').style.color = "green";
+               document.getElementById('check').style.display = "block";
+               document.getElementById('check2').style.display = "none";
+           }
+           if(mk1 != mk)
+           {
+               document.getElementById('mk1').style.border = "2px solid red";
+
+               document.getElementById('check').style.display = "none";
+               document.getElementById('check2').style.display = "block";
+               document.getElementById('check2').style.color = "red";
+           }
+           if(mk1 == "")
+           {
+               document.getElementById('check2').style.display = "none";
+               document.getElementById('check').style.display = "none";
+               document.getElementById('mk1').style.border = "";
+           }
+        }
+    </script>
+</body>
+</html>

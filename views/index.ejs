@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+    <title>Trang Chủ</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <span>Hello,<%=name%>   <i onclick="logOut()" class="fa-solid fa-right-from-bracket"></i></span>
+        </div>
+        <div class="banner">
+            <div class="logo">
+                <img src="https://inkythuatso.com/uploads/images/2021/11/logo-fpt-inkythuatso-1-01-01-14-33-19.jpg" alt="">
+            </div>
+            <div class="search">
+                <input id="search" oninput="search()" type="text" placeholder="Nhập sản phẩm muốn tìm">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <ul style="display:none ;" id="list">
+                   
+                </ul>
+            </div>
+            <div class="user">
+                <i onclick="User1()" class="fa-solid fa-user"></i>
+                <span>Tài khoản<span>
+            </div>
+            <div class="myCart">
+                <i onclick="show()" class="fa-solid fa-cart-shopping"></i>
+                <span>Giỏ hàng (<small id="demSL">0</small>)<span>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Trang Chủ</li>
+                <li class="menu-one">Điện Thoại
+                    <ul class="menu-one-parent">
+                        <li>Iphone</li>
+                        <li>Oppo</li>
+                        <li>Samsung</li>
+                        <li>Nokia</li>
+                    </ul>
+                </li>
+                <li class="menu-two">Laptop
+                    <ul class="menu-two-parent">
+                        <li>Macbook</li>
+                        <li>Acer</li>
+                        <li>Dell</li>
+                        <li>Lenovo</li>
+                    </ul>
+                </li>
+                <li class="menu-three">Phụ Kiện
+                    <ul class="menu-three-parent">
+                        <li>Tai nghe</li>
+                        <li>bàn phím</li>
+                        <li>Chuột</li>
+                        <li>Ốp lưng</li>
+                    </ul>
+
+                </li>
+                <li>Giới Thiệu</li>
+                <li>Liên Hệ</li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="left"><img id="ig" onclick="save()" src="https://cdn.tgdd.vn/2022/03/banner/A53-830-300-830x300.png"></div>
+            <div class="right">
+               <ul>
+                   <li><img  src="https://cdn.tgdd.vn/2022/03/banner/laptopdesk-222-340x340.jpg"></li>
+                   <li><img  src="https://cdn.tgdd.vn/2022/03/banner/laptopdesk123-340x340.jpg"></li>
+                   <li><img  src="https://cdn.tgdd.vn/2021/06/banner/3-340x340.jpg"></li>
+                   <li><img  src="https://cdn.tgdd.vn/2022/03/banner/taignhe-340x340.jpg"></li>
+               </ul>
+            </div>
+        </div>
+
+        <div class="DMUC">
+            <div class="tittle">
+                <h4>DANH SÁCH SẢN PHẨM</h4>
+            </div>
+            <div class="danhMuc">
+                <div class="danhMuc-left">
+                    <h3>Danh Mục Sản Phẩm</h3>
+                    <ul>
+                        <li>APPLE</li>
+                        <li>OPPO</li>
+                        <li>SAMSUNG</li>
+                        <li>NOKIA</li>
+                        <li>VIVO</li>
+                    </ul>
+                </div>
+
+                <div id="danhMuc-right" class="danhMuc-right">
+                    <% for(let i = 0;i<data.length;i++){%> 
+                        <div class="sp">
+      
+                            <div class="img">
+                                <a href="/detail/<%=data[i].id%>"><img src="<%=data[i].image%>" alt=""></a>
+                                <!-- <img src="<%=data[i].image%>" alt=""> -->
+                            </div>
+                    
+                            <div class="profile">
+                                <h3>THÔNG TIN</h3>
+                                <div class="name"><%=data[i].name%></div>
+                                <div class="buy">
+                                    <p style="color:white ;">GIÁ: $<span><%=data[i].price%></span></p>
+                                    <span style="color: white;">Color:</span> 
+                                    <span class="item1"></span>
+                                    <span class="item2"></span>
+                                    <span class="item3"></span> <br><br>
+                                    <p style="display: none;"><%=data[i].id%></p>
+                                    <p style="display: none;"><%=data[i].moTa%></p>
+                                    <button onclick="buy(this)">Mua ngay</button>
+                                </div>
+                            </div>
+                      
+                        </div> 
+                         <%}%>
+                </div>
+               
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-head">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-trophy fa-2x"></i>
+                        <p>
+                            <small style="margin-left:20px ;">Sản phẩm</small><br>
+                           <strong style="font-size: 15px ; margin-left: 5px;">CHÍNH HÃNG</strong>
+                        </p>
+                   </li>
+                    <li>
+                        <i class="fa-solid fa-taxi fa-2x"></i>
+                        <p>
+                           <small style="margin-left:10px;">Giao hàng tận nơi</small><br>
+                          <strong style="font-size: 15px; margin-left: 4px;">63 TỈNH THÀNH</strong>
+                       </p>
+                   </li>
+                    <li>
+                        <i class="fa-solid fa-phone fa-2x"></i>
+                        <p>
+                           <small style="margin-left:5px ;">Tư vấn miễn phí</small><br>
+                          <strong style="font-size: 15px ; margin-left: 4px;">0914128394</strong>
+                       </p>
+                   </li>
+                    <li>
+                        <i class="fa-solid fa-briefcase fa-2x"></i>
+                        <p>
+                           <small style="margin-left:0px ;">Chính sách đổi trả</small><br>
+                          <strong style="font-size: 15px ; margin-left: 6px;">LINH HOẠT</strong>
+                       </p>
+                   </li>
+                </ul>
+            </div>
+            <div class="footer-body">
+                <div class="footer-body-1">
+                    <h5 style="text-align:center ;">Hỗ Trợ Khách Hàng</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Câu hỏi thường gặp</li>
+                        <li><i class="fa-solid fa-check"></i> Phương thức thanh toán</li>
+                        <li><i class="fa-solid fa-check"></i> Hướng dẫn đặt hàng</li>
+                        <li><i class="fa-solid fa-check"></i> Trung tâm bảo hành</li>
+                    </ul>
+                </div>
+                <div class="footer-body-2"> 
+                    <h5 style="text-align:center ;">Chính Sách</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Chính sách giao hàng</li>
+                        <li><i class="fa-solid fa-check"></i> Chính sách đổi sản phẩm</li>
+                        <li><i class="fa-solid fa-check"></i> Chính sách bảo mật</li>
+                        <li><i class="fa-solid fa-check"></i> Chính sách bảo hành</li>
+                    </ul>
+                </div>
+                <div class="footer-body-3">
+                    <h5 style="text-align:center ;">Liên Hệ Chúng Tôi</h5>
+                    <ul>
+                        <li><i style="color:red ;" class="fa-solid fa-location-pin"></i> Câu hỏi thường gặp</li>
+                        <li><i class="fa-solid fa-square-phone"></i> Phương thức thanh toán</li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+
+    </div>
+    <div id="cart" class="cart">
+        <table>
+            <thead>
+                <tr>
+                   <th>NAME</th>
+                   <th>IMAGE</th>
+                   <th>PRICE</th>
+                   <th>AMOUNT</th>
+                   <th>OTHER</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <h4 style="margin-left:200px ;">Giá: <span id="tt">0</span></h4><br>
+        <button id="datHang" onclick="datHang(this)">ĐẶT HÀNG</button><Br></Br>
+    </div>
+    <script src="/javascripts/index.js"></script>
+    <script>
+         var delete_cookie = function (name) {
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+      };
+
+      /* Log Out */
+      function logOut() {
+        if (confirm("Bạn có muốn đăng xuất không")) {
+          delete_cookie('token');
+          location.reload();
+        }
+      }
+    </script>
+</body>
+</html>
+
